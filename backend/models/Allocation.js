@@ -7,7 +7,7 @@ const allocationSchema = new mongoose.Schema({
     facultyId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true }, // Invigilator
     facultyName: { type: String, required: true },
     date: { type: Date, required: true },
-    startTime: { type: String, required: true }, // Exam Start Time (e.g., "10:00 AM")
+    startTime: { type: String, required: true }, //Stores Exam Start Time (e.g., "10:00 AM") in UTC format
     endTime: { type: String, required: true } 
 }, { timestamps: true });
 

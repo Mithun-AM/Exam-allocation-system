@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const PORT = process.env.PORT || 4000;
+const axios = require('axios');
 
 require('dotenv').config();
 
@@ -26,11 +27,11 @@ const facultyRoute = require("./routes/facultyRoute")
 const adminRoute = require("./routes/adminRoutes");
 const roomRoutes = require('./routes/roomRoutes');
 
-// const subjectRoute = require('./routes/subjectRoutes');
 const examRoutes = require("./routes/examRoutes");
 const pdfRoutes = require('./routes/pdfRoutes');
 // const insert = require("./init/insertData");
 // insert();
+
 
 app.use("/auth",userRoute);
 app.use("/admin", adminRoute);
@@ -40,6 +41,9 @@ app.use("/room", roomRoutes);
 // app.use("/subject",subjectRoute);
 app.use("/exams", examRoutes);
 app.use("/pdf", pdfRoutes);
+
+// Chat endpoint
+
 
 
 app.get("/",(req,res)=>{
