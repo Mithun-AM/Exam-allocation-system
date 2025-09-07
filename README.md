@@ -106,7 +106,3 @@ Follow these instructions to set up and run the project on your local machine.
 The application will be available at `http://localhost:3000`.
 
 ---
-
-## 📄 License
-
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
