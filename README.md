@@ -5,7 +5,6 @@ A robust, full-stack web application built using the **MERN Stack** and **Tailwi
 ## Demo
 
 [![Watch the Demo Video](https://img.youtube.com/vi/3LtOTduAXm4/0.jpg)](https://youtu.be/3LtOTduAXm4)
-
 ---
 
 ## ✨ Key Features
